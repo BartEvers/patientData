@@ -44,3 +44,16 @@ patients.forEach(function(patient) {
 
   console.log(`Last Name: ${lastName}, Gender: ${gender}`);
 });
+
+patients.forEach(function(patient) {
+  // HERE IS HOW TO CHECK YOURSELF
+  //   console.log("CHECK TO SEE WHAT IS PATIENT:", patient);
+
+  const { lastName, gender } = patient;
+
+  //   console.log(lastName, gender);
+
+  const prefix = gender === "m" ? "Mr" : "Mrs";
+
+  console.log(`${prefix} ${lastName}`);
+});
